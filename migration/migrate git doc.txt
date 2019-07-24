@@ -1,0 +1,5 @@
+--git add remote
+git remote add rm https://github.com/ZiddanDwiPutra/rencana-mu.git
+
+--pull unrelated histories
+git pull rm master --allow-unrelated-histories

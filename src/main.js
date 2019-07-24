@@ -26,5 +26,17 @@ var main = {
         nonActive: ()=>{
             select('.loading-el').fadeOut(100);
         }
+    },
+    startParam: (strParamName , strVal)=>{
+        return "?".concat(strParamName, "=", strVal);
+    },
+    createParam: (strParamName , strVal)=>{
+        return "&".concat(strParamName, "=", strVal);
+    }
+}
+
+var allServices = {
+    saveNotes: (data, onSuccess)=>{
+        return POST("notesBack.php".concat(main.startParam('path', 'save')), data, onSuccess);
     }
 }
