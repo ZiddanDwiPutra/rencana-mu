@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon-core{
+    font-size: 20pt;
+    transition: transform 400ms;
+    display: inline-block;
+}
+.icon-core:hover{
+    transform: rotate(360deg);
+    /* transform: ; */
+}
+.header{
+    background: cornflowerblue;
+    padding: 1rem;
+}
+.features-item{
+    border: 1px solid;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
+    min-width: 100px;
+    text-align: center;
+    transition: box-shadow 200ms;    
+    cursor: pointer;
+}
+
+.features-item:hover{
+    box-shadow: 1px 1px 10px -2px black;
+}
+
+
+.loading-el{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    padding-top: 20%;
+    height: 100%;
+    font-size: 30pt;
+    background: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+    font-family: cursive;
+}
